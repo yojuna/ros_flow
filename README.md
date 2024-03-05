@@ -54,6 +54,9 @@ Currently, started with:
     - ref: [reactflow examples: basic feature overview](https://reactflow.dev/examples)
 - Figma like viewport controls
     - ref: [viewport examples](https://reactflow.dev/learn/concepts/the-viewport#figma-like-viewport-controls)
+    - node group movable selection via left-click drag selection
+    - horizontal and vertical pan on scroll
+    - zoom in/out using `[ctrl]+[scroll]`
 - code split into components and config files
 - App rendered in `src/main.jsx`; App entrypoint defined in `src/App.jsx`
 
