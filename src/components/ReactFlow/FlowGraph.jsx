@@ -738,7 +738,7 @@ export default function Flow() {
     <>
       <div style={{ height: '100%', width: '100%' }} ref={reactFlowWrapper}>
         <ReactFlow
-          // minZoom={0.1}
+          minZoom={0.1}
           nodes={nodes}
           edges={edges}
           onNodesChange={onNodesChange}
@@ -751,8 +751,8 @@ export default function Flow() {
           onPaneClick={onPaneClick}
           nodeTypes={nodeTypes}
           style={rfStyle}
-          // snapToGrid
-          // snapGrid={[40, 40]}
+          snapToGrid
+          snapGrid={[40, 40]}
           edgeTypes={{ custom: CustomEdge }}
           fitView
           panOnScroll

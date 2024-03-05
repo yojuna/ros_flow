@@ -36,6 +36,11 @@ function TensorNode({ data, isConnectable, id, modelId }) {
     (state) => state.computeGraph.predefinedModel
   );
 
+  // ROS publisher node definitions
+  const [pubTopic, setPubTopic] = useState(data.pubTopic);
+  const [pubMsgType, setPubMsgType] = useState(data.pubMsgType);
+  const [pubQueueSize, setPubQueueSize] = useState(data.pubQueueSize);
+
   const [type, setType] = useState(data.type);
   const [initialization, setInitialization] = useState(data.initialization);
   const [rows, setRows] = useState(data.rows);

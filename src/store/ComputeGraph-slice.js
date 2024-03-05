@@ -16,12 +16,24 @@ const computeGraphSlice = createSlice({
     momentum: 0.9,
     edgesActive: false,
     dataset: '',
-    predefinedModel: 'Regression1',
+    predefinedModel: '',
     breakTraining: false,
+    publisher_topic: '',
+    publisher_queue_size: 10,
+    publisher_msg_type: String,
   },
   reducers: {
     setInitialState(state, action) {
       return action.payload;
+    },
+    setPublisherTopic(state, action){
+      state.publisher_topic = action.payload;
+    },
+    setPublisherQueueSize(state, action){
+      state.publisher_queue_size = action.payload;
+    },
+    setPublisherMsgType(state, action){
+      state.publisher_msg_type = action.payload;
     },
     setTensorNodes(state, action) {
       state.tensors = action.payload;

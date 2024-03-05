@@ -2,7 +2,7 @@
 
 ROSFlow NodeWeaver: Node based editor for robotics/ROS workflows. React based Node editor app using reactflow.
 
-## dev notes
+## setup / usage
 
 ### usage
 
@@ -41,7 +41,6 @@ ref: [ReactFlow docs: Installation/setup](https://reactflow.dev/learn#installati
 
 Now, keep adding the required ReactFlow components and plugins as needed.
 
-
 ### basic app setup
 
 Currently, started with:
@@ -63,3 +62,19 @@ Currently, started with:
 Looks something like this:
 
 ![reactflow basic app home screen with sidebar](./public/images/sidebar_basic.jpg)
+
+
+## dev notes
+
+[5/3/24] Added home screen starting viewport with sidebar and node adding capability
+
+### TODO
+
+- create custom node for defining ROS Subscriber, Publisher
+- custom node definition for:
+    - ROS Services and Actions 
+- JSON export of workspace
+- Node and connection metadata preview in panel/sidebar
+- custom node requirements:
+    - should be able to add multiple nodes inside each new node
+    
