@@ -62,4 +62,4 @@ Currently, started with:
 
 Looks something like this:
 
-![reactflow basic app home screen](./public/images/basic_app.jpg)
+![reactflow basic app home screen with sidebar](./public/images/sidebar_basic.jpg)
