@@ -13,6 +13,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 // import SetUpData from './utils/backend/CPU/ModelSetup/setUpData';
 import SelectModel from './components/SelectionBar/usableModels';
+import NavBar from './components/NavBar/NavBar';
 // import WebGPUChecker from './components/Warnings/WebGPUChecker';
 import FlowGraph from './components/ReactFlow/FlowGraph';
 import Flow from './App';
@@ -33,7 +34,7 @@ const darkTheme = createTheme({
   },
 });
 
-const drawerWidth = 300;
+const drawerWidth = 200;
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })(
   ({ theme, open }) => ({
@@ -141,12 +142,12 @@ function FlowMain() {
                   <MenuIcon sx={{ color: 'rgb(230,230,230)' }} />
                 </IconButton>
                 <Typography
-                  variant="h6"
+                  variant="h7"
                   component="div"
                   noWrap
                   sx={{
                     width: '100%',
-                    fontSize: 32,
+                    fontSize: 24,
                   }}
                 >
                   {characters}
@@ -183,7 +184,8 @@ function FlowMain() {
                   )}
                 </IconButton>
               </DrawerHeader>
-              <SelectModel />
+              {/* <SelectModel /> */}
+              <NavBar />
             </Drawer>
             <Main open={open} style={{ height: '100vh' }}>
               {/* <Flow /> */}
