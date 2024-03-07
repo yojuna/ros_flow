@@ -1,4 +1,6 @@
 import TextUpdaterNode from './components/nodes/textBoxNode';
+import rosSubscriberNode from './components/nodes/subscriberNode';
+import rosPublisherNode from './components/nodes/publisherNode';
 import TensorNode from './components/Tensors/TensorNode';
 
 import initialNodes from './components/nodes/initialNodes.js';
@@ -31,7 +33,11 @@ const panOnDrag = [1, 2];
 // we define the nodeTypes outside of the component to prevent re-renderings
 // you could also use useMemo inside the component
 // const nodeTypes = { textUpdater: TextUpdaterNode };
-const nodeTypes = { TensorNode: TensorNode };
+const nodeTypes = { 
+  textUpdater: TextUpdaterNode,
+    rosSubscriber: rosSubscriberNode,
+    rosPublisher: rosPublisherNode
+   };
 
 
 export { rfStyle, edgeOptions, connectionLineStyle, minimapStyle, panOnDrag, nodeTypes, initialNodes, initialEdges };

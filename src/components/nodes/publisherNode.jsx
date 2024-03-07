@@ -4,24 +4,28 @@ import Typography from '@mui/material/Typography';
 
 const handleStyle = { left: 10 };
 
-function rosSubscriberNode({ data, isConnectable }) {
+function rosPublisherNode({ data, isConnectable }) {
   const onChange = useCallback((evt) => {
     console.log(evt.target.value);
   }, []);
 
   return (
-    <div className="ros-subscriber-node">
-      <Handle type="target" position={Position.Left} isConnectable={isConnectable} />
+    <div className="ros-publisher-node">
+      <Handle type="source" position={Position.Right} isConnectable={isConnectable} />
       <Typography
             color="grey.500"
             padding="1px"
             margin="1px"
             fontSize="12px"
           >
-            <strong>Subscriber</strong>
+            <strong>Publisher</strong>
       </Typography>
       <div>
         <label htmlFor="text">topic:</label>
+        <input id="text" name="text" onChange={onChange} className="nodrag" />
+      </div>
+      <div>
+        <label htmlFor="text">msg:</label>
         <input id="text" name="text" onChange={onChange} className="nodrag" />
       </div>
       <div>
@@ -30,7 +34,7 @@ function rosSubscriberNode({ data, isConnectable }) {
       </div>
       <div>
         <label htmlFor="text">msg_type:</label>
-        <input id="text" name="text" onChange={onChange} className="nodrag" defaultValue={'string'}/>
+        <input id="text" name="text" onChange={onChange} className="nodrag" defaultValue={'std_msgs.msg.String'}/>
       </div>
       {/* <Handle
         type="source"
@@ -44,4 +48,4 @@ function rosSubscriberNode({ data, isConnectable }) {
   );
 }
 
-export default rosSubscriberNode;
+export default rosPublisherNode;

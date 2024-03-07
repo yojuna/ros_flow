@@ -61,6 +61,9 @@ Currently, started with:
 
 Looks something like this:
 
+
+![ros nodes basic example](./public/images/ros_nodes.jpg)
+
 ![reactflow basic app home screen with sidebar](./public/images/sidebar_basic.jpg)
 
 

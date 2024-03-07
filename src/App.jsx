@@ -13,6 +13,7 @@ import ReactFlow, {
 import { rfStyle, edgeOptions, connectionLineStyle, minimapStyle, panOnDrag, nodeTypes, initialEdges, initialNodes } from './AppConfig.js'
 import 'reactflow/dist/style.css';
 import './styles/textBox.css';
+import './styles/rosNodes.css'
 
 function Flow() {
   const [nodes, setNodes] = useState(initialNodes);

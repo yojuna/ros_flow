@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     {/* React flow needs to be inside an element with a known height and width to work */}
     <div style={{ width: '100vw', height: '100vh' }}>
       <ReactFlowProvider>
-        {/* <App /> */}
-        <FlowMain />
+        <App />
+        {/* <FlowMain /> */}
       </ReactFlowProvider>
     </div>
   </React.StrictMode>,

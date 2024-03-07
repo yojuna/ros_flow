@@ -1,0 +1,28 @@
+.ros-subscriber-node {
+    height: 150px;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+  }
+  
+  .ros-subscriber-node label {
+    display: block;
+    color: #777;
+    font-size: 12px;
+  }
+  
+.ros-publisher-node {
+    height: 193px;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+  }
+  
+  .ros-publisher-node label {
+    display: block;
+    color: #777;
+    font-size: 12px;
+  }
+  
